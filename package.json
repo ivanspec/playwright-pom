@@ -8,7 +8,8 @@
     "test-ui": "playwright test --ui",
     "trace": "playwright show-trace ",
     "report": "playwright show-report",
-    "test": "playwright test"
+    "test": "playwright test",
+    "format": "prettier --write ."
   },
   "author": "ivanspec",
   "license": "ISC",
