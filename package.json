@@ -1,0 +1,28 @@
+{
+  "name": "playwright-pom",
+  "version": "1.0.0",
+  "description": "Example Playwright",
+  "main": "index.js",
+  "scripts": {
+    "gen": "yarn playwright codegen",
+    "test-ui": "playwright test --ui",
+    "trace": "playwright show-trace ",
+    "report": "playwright show-report",
+    "test": "playwright test"
+  },
+  "author": "ivanspec",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10"
+  },
+  "dependencies": {
+    "@types/eslint": "^9.6.1",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "plugins": ["@typescript-eslint", "cypress"],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+      "cypress/no-assigning-return-values": "error",
+      "cypress/no-unnecessary-waiting": "warn",
+      "cypress/assertion-before-screenshot": "warn",
+      "cypress/no-force": "warn",
+      "cypress/no-async-tests": "error",
+      "cypress/no-pause": "error",
+      "linebreak-style": 0,
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"]
+    },
+    "env": {
+      "cypress/globals": true,
+      "node": true
+    },
+    "extends": ["plugin:cypress/recommended", "eslint:recommended", "plugin:prettier/recommended"]
+  }
