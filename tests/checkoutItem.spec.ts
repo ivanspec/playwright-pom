@@ -40,4 +40,3 @@ test('user checkout item', async () => {
   await cartPage.clickBackHome();
   await loginPage.assertTitleProduct();
 });
-
