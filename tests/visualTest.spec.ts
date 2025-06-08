@@ -5,6 +5,8 @@ test('Example visual testing', async ({ page }) => {
   await page.goto('https://shopee.co.id/buyer/login?');
 
   await expect(page.getByRole('textbox', { name: 'No. Handphone/Username/Email' })).toBeVisible();
-  await expect(page).toHaveScreenshot('homepage.png');
-  
+  await expect(page).toHaveScreenshot({
+    name: 'homepage.png',
+    omitPlatformFromName: true  // This will use the same name across platforms
+  });
 });
