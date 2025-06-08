@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test('Example visual testing', async ({ page }) => {
+test('Example visual testing', async ({ page }, testinfo) => {
+testinfo.snapshotSuffix = '';
   // Navigate to Google
   await page.goto('https://shopee.co.id/buyer/login?');
 
